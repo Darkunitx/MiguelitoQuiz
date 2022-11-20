@@ -1,15 +1,20 @@
 var timeEl = document.querySelector(".time");
 var genbutton = document.querySelector("#generate");
-genbutton.addEventListener("click", startTimer);
+genbutton.addEventListener("click", startGame);
+
 var questions = [
     {title:"How many fingers am i holding up?",
     choices: ["one","two","three","eight hundred and fifty five"],
     answer: "eight hundred and fifty five"}
 ]
 
-var timeLeft = 10;
+function startGame() {
+    startTimer();
+    questionTime();
+}
 
 function startTimer() {
+  var timeLeft = 100;
   var timerInterval = setInterval(function() {
     timeLeft--;
     timeEl.textContent = timeLeft + " Seconds left! Hurry up!.";
@@ -20,6 +25,10 @@ function startTimer() {
     }
 
   }, 1000);
+}
+
+function questionTime() {
+
 }
 
 function loserMessage(){
