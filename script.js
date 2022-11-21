@@ -1,21 +1,22 @@
 var timeEl = document.querySelector(".time");
+var mainEl = document.querySelector(".main");
 var genbutton = document.querySelector("#generate");
 genbutton.addEventListener("click", startGame);
 
 var questions = [
     {title:"How many fingers am i holding up?",
-    choices: ["one","two","three","eight hundred and fifty five"],
+    choices: ["one","two","three","eight hundd fifty five"],
     answer: "eight hundred and fifty five"}
 ]
 
 function startGame() {
     startTimer();
-    questionTime();
+    questionOne();
 }
 
 function startTimer() {
-  var timeLeft = 100;
-  var timerInterval = setInterval(function() {
+    var timeLeft = 10;
+    var timerInterval = setInterval(function() {
     timeLeft--;
     timeEl.textContent = timeLeft + " Seconds left! Hurry up!.";
 
@@ -27,11 +28,47 @@ function startTimer() {
   }, 1000);
 }
 
-function questionTime() {
+function questionOne () {
+    mainEl.textContent = "Question 1"
+
+}
+
+function questionTwo () {
+    mainEl.textContent = "Question 2"
+
+}
+
+function questionThree () {
+    mainEl.textContent = "Question 3"
+
+}
+
+function questionFour () {
+    mainEl.textContent = "Question 4"
+
+}
+
+function questionFive () {
+    mainEl.textContent = "Question 5"
+
+}
+
+function questionSix () {
+    mainEl.textContent = "Question 6"
+
+}
+
+function questionSeven () {
+    mainEl.textContent = "Question 7"
+
+}
+
+function questionEight () {
+    mainEl.textContent = "Question 8"
 
 }
 
 function loserMessage(){
-   window.alert("you lost SUCKAA");
-   return null;
+    timeEl.textContent = "You lost Suckaaa"
+    return null;
 }
