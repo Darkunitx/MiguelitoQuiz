@@ -1,5 +1,6 @@
 var timeEl = document.querySelector(".time");
 var mainEl = document.querySelector(".main");
+var innerEl = document.querySelector(".inner");
 var genbutton = document.querySelector("#generate");
 genbutton.addEventListener("click", startGame);
 
@@ -73,6 +74,11 @@ function startTimer() {
 function questionOne () {
     mainEl.textContent = "Question 1"
     mainEl.textContent = question1[0].title;
+    innerEl.textContent = question1[0].choices;
+    // mainEl.textContent = question1[1].choices;
+    // mainEl.textContent = question1[2].choices;
+    // mainEl.textContent = question1[3].choices;
+
 }
 
 function questionTwo () {
