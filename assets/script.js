@@ -1,5 +1,6 @@
 var timeEl = document.querySelector(".time");
 var mainEl = document.querySelector(".main");
+var titleEl = document.querySelector(".title");
 var innerEl = document.querySelector(".inner");
 var genbutton = document.querySelector("#generate");
 genbutton.addEventListener("click", startGame);
@@ -72,7 +73,7 @@ function startTimer() {
 }
 
 function questionOne () {
-    mainEl.textContent = "Question 1"
+    titleEl.textContent = "Question 1"
     mainEl.textContent = question1[0].title;
     innerEl.textContent = question1[0].choices;
     // mainEl.textContent = question1[1].choices;
@@ -82,41 +83,45 @@ function questionOne () {
 }
 
 function questionTwo () {
-    mainEl.textContent = "Question 2"
+    titleEl.textContent = "Question 2"
 
 }
 
 function questionThree () {
-    mainEl.textContent = "Question 3"
+    titleEl.textContent = "Question 3"
 
 }
 
 function questionFour () {
-    mainEl.textContent = "Question 4"
+    titleEl.textContent = "Question 4"
 
 }
 
 function questionFive () {
-    mainEl.textContent = "Question 5"
+    titleEl.textContent = "Question 5"
 
 }
 
 function questionSix () {
-    mainEl.textContent = "Question 6"
+    titleEl.textContent = "Question 6"
 
 }
 
 function questionSeven () {
-    mainEl.textContent = "Question 7"
+    titleEl.textContent = "Question 7"
 
 }
 
 function questionEight () {
-    mainEl.textContent = "Question 8"
+    titleEl.textContent = "Question 8"
 
 }
 
 function loserMessage(){
     timeEl.textContent = "You lost Suckaaa"
+    titleEl.textContent = ""
+    mainEl.textContent = ""
+    innerEl.textContent = ""
+
     return null;
 }
