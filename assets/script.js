@@ -72,7 +72,7 @@ function startTimer() {
 
 function questionOne () {
     mainEl.textContent = "Question 1"
-
+    mainEl.textContent = question1[0].title;
 }
 
 function questionTwo () {
